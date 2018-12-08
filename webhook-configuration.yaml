@@ -10,7 +10,7 @@ webhooks:
         apiVersions: ["*"]
         resources: ["*"]
     clientConfig:
-      caBundle: $(cat ca.crt | base64 | tr -d '\n')
+      caBundle: $CERTVALBASE64
       service:
         namespace: opa
         name: opa
