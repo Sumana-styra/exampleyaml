@@ -10,7 +10,7 @@ webhooks:
         apiVersions: ["*"]
         resources: ["*"]
     clientConfig:
-      caBundle: $CERTVALBASE64
+      caBundle: CERTVALBASE64
       service:
         namespace: opa
         name: opa
